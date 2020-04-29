@@ -1,6 +1,6 @@
 import Masonry from "react-masonry-css";
 import Layout from "../../components/layout";
-import Link from "next/Link";
+import Link from "next/link";
 
 export default () => {
   return (
