@@ -1,12 +1,13 @@
 import Head from "next/head";
 import { Menu, X } from "react-feather";
-import Link from "next/Link";
+import Link from "next/link";
 import ActiveLink from "./activeLink";
 import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import SiriWave from "siriwave";
+
 import {
   faGithub,
   faTwitter,
