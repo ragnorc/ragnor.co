@@ -3,16 +3,7 @@
   "version": 2,
   "alias": ["app.ragnor.co"],
   "build": {
-    "env": {
-      "ALGOLIA_SEARCH_KEY": "@algolia-search-key",
-      "ALGOLIA_ADMIN_KEY": "@algolia-admin-key",
-      "NYLAS_CLIENT_ID": "@nylas-client-id",
-      "NYLAS_CLIENT_SECRET": "@nylas-client-secret",
-      "NYLAS_ACCESS_TOKEN": "@nylas-access-token",
-      "ATHENA_KEY": "@athena-key",
-      "TRANSLOADIT_SECRET": "@transloadit-secret",
-      "GOOGLE_API_KEY": "@google-api-key"
-    }
+    "env": {}
   },
   "builds": [
     {
