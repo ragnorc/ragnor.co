@@ -36,9 +36,9 @@ export default ({ initialQueriesData }) => {
           </Link>{" "}
           page.
           <br />
-          Here, I occasionally write about
+          Here, I occasionally write about{" "}
           <Link href="/projects">
-            <a className="underline text-black"> projects</a>
+            <a className="underline text-black">projects</a>
           </Link>
           &nbsp;I am working on and{" "}
           <Link className="underline text-black" href="/thoughts/">

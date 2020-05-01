@@ -1,7 +1,7 @@
 {
   "name": "Olympia",
   "version": 2,
-  "alias": ["app.ragnor.co"],
+  "alias": ["ragnorcomerford.com"],
   "build": {
     "env": {}
   },
