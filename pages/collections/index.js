@@ -17,10 +17,10 @@ const ListItem = ({ href, title, icon }) => {
 export default () => {
   return (
     <Layout>
-      <div class="flex">
-        <div class="pl-18 lg:pl-32 w-full leading-relaxed">
-          <h1 class="text-5xl font-bold mb-12">
-            <span class="text-primary">C</span>ollections
+      <div className="flex">
+        <div className="pl-18 lg:pl-32 w-full leading-relaxed">
+          <h1 className="text-5xl font-bold mb-12">
+            <span className="text-primary">C</span>ollections
           </h1>
           <Masonry
             className="w-auto flex"

@@ -3,11 +3,11 @@ import Layout from "../components/layout";
 export default () => {
   return (
     <Layout>
-      <div class="pl-18 lg:pl-32 md:w-3/4 lg:w-3/4 leading-relaxed">
-        <h1 class="text-5xl font-bold mb-4">
-          <span class="text-primary">A</span>PI
+      <div className="pl-18 lg:pl-32 md:w-3/4 lg:w-3/4 leading-relaxed">
+        <h1 className="text-5xl font-bold mb-4">
+          <span className="text-primary">A</span>PI
         </h1>
-        <p class="mb-5">
+        <p className="mb-5">
           The collections found on my website and additional personal
           information such as my education history or work experience can be
           queried using my personal GraphQL API. The playground below includes
@@ -27,10 +27,10 @@ export default () => {
           </a>
         </p>
       </div>
-      <div class="w-100 justify-center mt-20 hidden lg:flex md:flex xl:flex xxl:flex">
+      <div className="w-100 justify-center mt-20 hidden lg:flex md:flex xl:flex xxl:flex">
         <iframe
           src="https://api.ragnor.co/graphql"
-          class="rounded-lg w-3/4 h-112 shadow-md"
+          className="rounded-lg w-3/4 h-112 shadow-md"
           name="API Playground"
           scrolling="no"
           frameborder="0"
