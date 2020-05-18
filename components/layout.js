@@ -80,11 +80,11 @@ function Layout({ title = "Ragnor Comerford", children }) {
                 <a
                   target="_blank"
                   className={`ml-5 hover:text-primary`}
-                  href="https://files.ragnor.co/ResumeRagnorComerford.pdf"
+                  href="https://storage.ragnor.co/ResumeRagnorComerford.pdf"
                 >
                   CV
                 </a>
-                <ActiveLink activeClassName="text-primary" href="/api">
+                <ActiveLink activeClassName="text-primary" href="/graphql">
                   <a className={`ml-5 hover:text-primary`}>API</a>
                 </ActiveLink>
               </div>

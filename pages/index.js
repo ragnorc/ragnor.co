@@ -41,12 +41,12 @@ export default ({ initialQueriesData }) => {
             <a className="underline text-black">projects</a>
           </Link>
           &nbsp;I am working on and{" "}
-          <Link className="underline text-black" href="/thoughts/">
+          <Link href="/thoughts/">
             <a className="underline text-black">thoughts and ideas</a>
           </Link>
           &nbsp;I have on different&nbsp;topics.
           <br />I also compile a{" "}
-          <Link className="underline text-black" href="/collections/">
+          <Link href="/collections/">
             <a className="underline text-black">collection</a>
           </Link>
           &nbsp;of books, movies, and articles I particularly like and
