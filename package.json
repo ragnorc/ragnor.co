@@ -82,6 +82,7 @@
     "react-instantsearch-dom": "^6.0.0",
     "react-masonry-css": "^1.0.14",
     "react-photo-gallery": "^8.0.0",
+    "react-progressive-image": "^0.6.0",
     "react-spinners": "^0.8.0",
     "react-table": "^7.0.0-beta.9",
     "react-truncate-string": "^1.3.0",
