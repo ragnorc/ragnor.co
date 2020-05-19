@@ -1,26 +1,19 @@
 import Layout from "../../components/layout";
 import Link from "next/link";
 import Gallery from "react-photo-gallery";
-import Masonry from "react-masonry-css";
-import ProgressiveImage from "react-progressive-image";
+//import Masonry from "react-masonry-css";
+import Image from "../../components/image";
+import { Masonry } from "masonic";
 
 export default () => {
   const photos = [
-    "spacex-falcon.jpg",
-
-    "hyped-group-photo.jpeg",
-
-    "hyped-elon-musk.jpg",
-
-    "spacex-tube.jpg",
-
-    "software-team.jpg",
-
-    "isabella-ragnor-working.jpg",
-
-    "spacex-tube-interior.jpg",
-
-    "spacex-tube.jpg",
+    "hyped/hyped-group-photo.jpeg",
+    "hyped/software-team.jpg",
+    "hyped/hyped-elon-musk.jpg",
+    "hyped/isabella-ragnor-working.jpg",
+    "hyped/spacex-tube-interior.jpg",
+    "hyped/spacex-falcon.jpg",
+    "hyped/spacex-tube.jpg",
   ];
 
   return (
@@ -31,14 +24,7 @@ export default () => {
             style={{ boxShadow: "0px 0px 45px 10px rgba(45, 56, 104, 0.5" }}
             className="rounded-lg w-1/4 mr-20 mb-4 hidden md:block xl:block xxl:block"
           >
-            <ProgressiveImage
-              src={"https://ik.imagekit.io/ragnor/hyped/thumbnail.jpeg"}
-              placeholder={
-                "https://ik.imagekit.io/ragnor/hyped/thumbnail.jpeg?tr=bl-40,ql-50"
-              }
-            >
-              {(src) => <img className="rounded-lg" src={src} alt="Image" />}
-            </ProgressiveImage>
+            <Image path="hyped/thumbnail.jpeg" className="rounded-lg"></Image>
           </div>
 
           <div>
@@ -52,6 +38,17 @@ export default () => {
             <p>
               <strong>Location:</strong> Los Angeles, CA & Edinburgh, UK
             </p>
+            <p>
+              <strong>Website:</strong>{" "}
+              <a
+                target="_blank"
+                className="underline"
+                href="https://hyp-ed.com"
+              >
+                hyp-ed.com
+              </a>
+            </p>
+
             <div className="flex mt-10 items-center">
               <img className="w-1/12 h-auto mr-5" src="/img/logos/hyped.png" />
               <img className="w-2/5 h-auto" src="/img/logos/spacex.svg" />
@@ -96,32 +93,16 @@ export default () => {
         </p>
 
         <Masonry
-          className="w-auto flex mt-20"
-          columnClassName="px-2"
-          breakpointCols={{
-            default: 3,
-            1000: 2,
-            700: 1,
-            400: 1,
-          }}
-        >
-          {photos.map((photo) => {
-            return (
-              <ProgressiveImage
-                src={"https://ik.imagekit.io/ragnor/hyped/" + photo}
-                placeholder={
-                  "https://ik.imagekit.io/ragnor/hyped/" +
-                  photo +
-                  "?tr=bl-40,ql-50"
-                }
-              >
-                {(src) => (
-                  <img className="rounded-lg mb-4" src={src} alt="Image" />
-                )}
-              </ProgressiveImage>
-            );
+          className="mt-20"
+          columnWidth={300}
+          columnGutter={20}
+          items={photos.map((url) => {
+            return { url };
           })}
-        </Masonry>
+          render={({ index, data, width }) => (
+            <Image path={data.url} className="rounded-lg"></Image>
+          )}
+        ></Masonry>
       </div>
     </Layout>
   );
