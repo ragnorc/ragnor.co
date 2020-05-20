@@ -1,12 +1,7 @@
 import { useEffect } from "react";
-import Layout from "../components/layout";
-import TruncateString from "react-truncate-string";
-import useSWR, { mutate } from "swr";
-import request from "../lib/request";
-import { Sun } from "react-feather";
-import Masonry from "react-masonry-css";
+import Layout from "components/layout";
+
 import Link from "next/link";
-const moment = require("moment");
 import Typical from "react-typical";
 
 export default ({ initialQueriesData }) => {

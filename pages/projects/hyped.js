@@ -1,8 +1,6 @@
-import Layout from "../../components/layout";
+import Layout from "components/layout";
 import Link from "next/link";
-import Gallery from "react-photo-gallery";
-//import Masonry from "react-masonry-css";
-import Image from "../../components/image";
+import Image from "components/image";
 import { Masonry } from "masonic";
 
 export default () => {
@@ -50,8 +48,8 @@ export default () => {
             </p>
 
             <div className="flex mt-10 items-center">
-              <img className="w-1/12 h-auto mr-5" src="/img/logos/hyped.png" />
-              <img className="w-2/5 h-auto" src="/img/logos/spacex.svg" />
+              <Image className="w-1/12 h-auto mr-5" path="logos/hyped.png" />
+              <Image className="w-2/5 h-auto" path="logos/spacex.svg" />
             </div>
           </div>
         </div>

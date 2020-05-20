@@ -66,26 +66,26 @@ function Layout({ title = "Ragnor Comerford", children }) {
 
               <div className="text-black  flex items-center justify-between hidden lg:block xl:block">
                 <ActiveLink activeClassName="text-primary" href="/">
-                  <a className={`ml-5 hover:text-primary`}>Home</a>
+                  <a className={`ml-5 hover:text-primary`}>home</a>
                 </ActiveLink>
                 <ActiveLink activeClassName="text-primary" href="/about">
-                  <a className={`ml-5 hover:text-primary`}>About</a>
+                  <a className={`ml-5 hover:text-primary`}>about</a>
                 </ActiveLink>
                 <ActiveLink activeClassName="text-primary" href="/projects">
-                  <a className={`ml-5 hover:text-primary`}>Projects</a>
+                  <a className={`ml-5 hover:text-primary`}>projects</a>
                 </ActiveLink>
                 <ActiveLink activeClassName="text-primary" href="/collections">
-                  <a className={`ml-5 hover:text-primary`}>Collections</a>
+                  <a className={`ml-5 hover:text-primary`}>collections</a>
                 </ActiveLink>
                 <a
                   target="_blank"
                   className={`ml-5 hover:text-primary`}
                   href="https://storage.ragnor.co/ResumeRagnorComerford.pdf"
                 >
-                  CV
+                  resume
                 </a>
                 <ActiveLink activeClassName="text-primary" href="/graphql">
-                  <a className={`ml-5 hover:text-primary`}>API</a>
+                  <a className={`ml-5 hover:text-primary`}>api</a>
                 </ActiveLink>
               </div>
             </div>

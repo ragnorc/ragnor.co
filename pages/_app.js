@@ -1,9 +1,6 @@
 import React from "react";
 import App from "next/app";
-import "../css/main.css";
-import "../node_modules/react-confirm-alert/src/react-confirm-alert.css"; // Import css
-import "@uppy/core/dist/style.css";
-import "@uppy/dashboard/dist/style.css";
+import "css/main.css";
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for

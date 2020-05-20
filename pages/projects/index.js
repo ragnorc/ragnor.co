@@ -1,5 +1,6 @@
 import Masonry from "react-masonry-css";
-import Layout from "../../components/layout";
+import Layout from "components/layout";
+import Image from "components/image";
 import Link from "next/link";
 
 export default () => {
@@ -23,7 +24,7 @@ export default () => {
             <a>
               <div className="shadow-black rounded-lg mb-6">
                 <div className="flex w-full justify-center items-center h-48 xxl:h-64">
-                  <img className="w-1/5 h-auto" src="/img/logos/epfl.svg" />
+                  <Image className="w-1/5 h-auto" path="logos/epfl.svg" />
                   <div className="border-l-2 h-10 border-black mx-5"></div>
                   <h2 className="text-lg">Predikon</h2>
                 </div>
@@ -34,7 +35,7 @@ export default () => {
             <a>
               <div className="shadow-black rounded-lg mb-6">
                 <div className="flex w-full justify-center items-center h-48 xxl:h-64">
-                  <img className="w-1/10 h-auto" src="/img/logos/hyped.png" />
+                  <Image className="w-1/10 h-auto" path="logos/hyped.png" />
 
                   <div className="border-l-2 h-10 border-black mx-5"></div>
                   <h2 className="text-lg">Hyperloop</h2>
@@ -46,10 +47,7 @@ export default () => {
             <a>
               <div className="shadow-black rounded-lg mb-6">
                 <div className="flex w-full justify-center items-center h-48 xxl:h-64">
-                  <img
-                    className="w-1/6 h-auto"
-                    src="/img/logos/edinburgh.png"
-                  />
+                  <Image className="w-1/6 h-auto" path="logos/edinburgh.png" />
 
                   <div className="border-l-2 h-10 border-black mx-5"></div>
                   <h2 className="text-lg">Coursework</h2>

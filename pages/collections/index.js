@@ -1,5 +1,5 @@
 import Masonry from "react-masonry-css";
-import Layout from "../../components/layout";
+import Layout from "components/layout";
 import Link from "next/link";
 import { Book, Video, Zap, User } from "react-feather";
 
@@ -34,18 +34,18 @@ export default () => {
           >
             <ListItem
               icon={<Book></Book>}
-              title="Books"
+              title="Book"
               href="/collections/books"
             ></ListItem>
             <ListItem
               icon={<Video></Video>}
               title="Movies and Series"
-              href="/collections/movies"
+              href="/collections/movieSeries"
             ></ListItem>
             <ListItem
               icon={<Zap></Zap>}
               title="Tools and Services"
-              href="/collections/tools"
+              href="/collections/toolsServices"
             ></ListItem>
             <ListItem
               icon={<User></User>}

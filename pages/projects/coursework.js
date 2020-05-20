@@ -1,5 +1,5 @@
-import Image from "../../components/image";
-import Layout from "../../components/layout";
+import Image from "components/image";
+import Layout from "components/layout";
 
 export default () => {
   return (
@@ -20,9 +20,9 @@ export default () => {
             </p>
 
             <a href="https://ed.ac.uk">
-              <img
+              <Image
                 className="w-1/10 h-auto mt-5"
-                src="~@/assets/img/logos/edinburgh.png"
+                path="logos/edinburgh.png"
               />
             </a>
           </div>
