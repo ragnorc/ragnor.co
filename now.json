@@ -13,11 +13,6 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "status": 301,
-      "headers": { "Location": "https://ragnorcomerford.com" }
-    },
-    {
       "src": "/github",
       "status": 301,
       "headers": { "Location": "https://github.com/ragnorc" }
