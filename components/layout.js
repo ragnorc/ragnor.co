@@ -4,6 +4,7 @@ import Link from "next/link";
 import ActiveLink from "./activeLink";
 import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
+import Image from "components/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import SiriWave from "siriwave";
@@ -61,7 +62,7 @@ function Layout({ title = "Ragnor Comerford", children }) {
           <header className="mb-24">
             <div className="flex h-24 items-center justify-between">
               <Link href="/">
-                <img className="h-12" src="/img/logos/rc.png" />
+                <Image className="h-12" path="logos/rc.png" />
               </Link>
 
               <div className="text-black  flex items-center justify-between hidden lg:block xl:block">

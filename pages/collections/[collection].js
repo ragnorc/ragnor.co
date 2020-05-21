@@ -28,7 +28,7 @@ export async function getStaticPaths() {
       { params: { collection: "toolServices" } },
       { params: { collection: "people" } },
     ],
-    fallback: true,
+    fallback: false,
   };
 }
 export async function getStaticProps({ params }) {

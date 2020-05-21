@@ -32,7 +32,6 @@
     "graphql": "14.5.8",
     "graphql-request": "^1.8.2",
     "https-proxy-agent": "^3.0.1",
-    "imagekitio-react": "^1.0.5",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-optipng": "^7.1.0",
     "imagemin-svgo": "^7.1.0",

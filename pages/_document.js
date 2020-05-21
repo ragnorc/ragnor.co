@@ -14,7 +14,10 @@ class MyDocument extends Document {
     return (
       <Html className="h-full">
         <Head>
-          <link rel="shortcut icon" href="/img/rc.png" />
+          <link
+            rel="shortcut icon"
+            href="https://ik.imagekit.io/ragnor/logos/rc.png"
+          />
         </Head>
         <body className="font-sans h-full w-full">
           <Main />
