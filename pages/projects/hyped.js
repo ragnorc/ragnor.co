@@ -18,12 +18,11 @@ export default () => {
     <Layout>
       <div className="flex flex-col px-18 lg:px-24 w-full leading-relaxed">
         <div className="flex mb-20">
-          <div
+          <Image
             style={{ boxShadow: "0px 0px 45px 10px rgba(45, 56, 104, 0.5" }}
+            path="hyped/thumbnail.jpeg"
             className="rounded-lg w-1/4 mr-20 mb-4 hidden md:block xl:block xxl:block"
-          >
-            <Image path="hyped/thumbnail.jpeg" className="rounded-lg"></Image>
-          </div>
+          ></Image>
 
           <div>
             <h1 className="text-5xl font-bold mb-8">Hyped</h1>

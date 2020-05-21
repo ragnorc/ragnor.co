@@ -1,11 +1,11 @@
 import ProgressiveImage from "react-progressive-image";
 
-export default ({ className, path }) => (
+export default (props) => (
   <ProgressiveImage
-    src={"https://ik.imagekit.io/ragnor/" + path}
+    src={"https://ik.imagekit.io/ragnor/" + props.path}
     placeholder={`
-      https://ik.imagekit.io/ragnor/${path}?tr=bl-40,ql-50`}
+      https://ik.imagekit.io/ragnor/${props.path}?tr=bl-40,ql-50`}
   >
-    {(src) => <img className={className} src={src} alt="Image" />}
+    {(src) => <img {...props} src={src} alt="Image" />}
   </ProgressiveImage>
 );
