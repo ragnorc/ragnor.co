@@ -65,7 +65,7 @@ function Layout({ title = "Ragnor Comerford", children }) {
               </Link>
 
               <div className="text-black  flex items-center justify-between hidden lg:block xl:block">
-                <ActiveLink activeClassName="text-primary" href="/">
+                <ActiveLink activeClassName="text-primary" href="/" exact>
                   <a className={`ml-5 hover:text-primary`}>home</a>
                 </ActiveLink>
                 <ActiveLink activeClassName="text-primary" href="/about">

@@ -11,7 +11,7 @@ export default ({ items, heading }) => {
           {heading.slice(1)}
         </h1>
         {items.map((item) => (
-          <a class="underline">
+          <a href={item.url} target="_blank" class="underline">
             {item.name}
             <br />
           </a>
@@ -56,6 +56,7 @@ export async function getStaticProps({ params }) {
           ${params.collection} {
             id
             name
+            url
           }
         }
         `

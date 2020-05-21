@@ -23,6 +23,10 @@ h3 {
   @apply text-3xl;
 }
 
+a:hover {
+  @apply text-primary;
+}
+
 *:focus {
   outline: none !important;
 }
