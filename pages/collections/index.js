@@ -34,7 +34,7 @@ export default () => {
           >
             <ListItem
               icon={<Book></Book>}
-              title="Book"
+              title="Books"
               href="/collections/books"
             ></ListItem>
             <ListItem
