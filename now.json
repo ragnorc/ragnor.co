@@ -40,12 +40,12 @@
     {
       "src": "/predikon",
       "status": 301,
-      "headers": { "Location": "https://ragnorcomerford.com/projects/predikon" }
+      "headers": { "Location": "https://ragnor.co/projects/predikon" }
     },
     {
       "src": "/hyped",
       "status": 301,
-      "headers": { "Location": "https://ragnorcomerford.com/projects/hyped" }
+      "headers": { "Location": "https://ragnor.co/projects/hyped" }
     },
     {
       "src": "/cv",
