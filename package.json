@@ -47,7 +47,6 @@
     "prop-types": "^15.7.2",
     "purgecss-whitelister": "^2.4.0",
     "raw-body": "^2.4.1",
-    "rc-progress": "^2.5.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-feather": "^2.0.3",
