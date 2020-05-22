@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Menu, X } from "react-feather";
 import Link from "next/link";
 import ActiveLink from "./activeLink";
-import { useRouter } from "next/router";
+import Router from "next/router";
 import { useState, useRef, useEffect } from "react";
 import Image from "components/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,8 +26,11 @@ library.add(
   faLinkedinIn
 );
 
+Router.events.on("routeChangeComplete", (url) => {
+  window.analytics.page(url);
+});
+
 function Layout({ title = "Ragnor Comerford", children }) {
-  const router = useRouter;
   const wave = useRef();
   const [isOpen, open] = useState(false);
   useEffect(() => {

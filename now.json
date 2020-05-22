@@ -3,7 +3,10 @@
   "version": 2,
   "alias": ["ragnor.co"],
   "build": {
-    "env": {}
+    "env": {
+      "SEGMENT_KEY": "@segment-key",
+      "NODE_ENV": "production"
+    }
   },
   "builds": [
     {
