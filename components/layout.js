@@ -145,23 +145,23 @@ function Layout({ title = "Ragnor Comerford", children }) {
           </button>
           <div className="flex flex-col items-end mt-20 mr-8">
             <ActiveLink activeClassName="text-primary" href="/">
-              <a>Home</a>
+              <a>home</a>
             </ActiveLink>
             <ActiveLink activeClassName="text-primary" href="/about">
-              <a>About</a>
+              <a>about</a>
             </ActiveLink>
             <ActiveLink activeClassName="text-primary" href="/projects">
-              <a>Projects</a>
+              <a>projects</a>
             </ActiveLink>
             <ActiveLink activeClassName="text-primary" href="/collections">
-              <a>Collections</a>
+              <a>collections</a>
             </ActiveLink>
             <a
               target="_blank"
               className={`ml-5 hover:text-primary`}
-              href="https://files.ragnor.co/ResumeRagnorComerford.pdf"
+              href="https://storage.ragnor.co/ResumeRagnorComerford.pdf"
             >
-              CV
+              resume
             </a>
             <ActiveLink activeClassName="text-primary" href="/api">
               <a>API</a>
