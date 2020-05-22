@@ -61,7 +61,7 @@ function Layout({ title = "Ragnor Comerford", children }) {
         >
           <Menu className="h-5"></Menu>
         </button>
-        <div className="px-16">
+        <div className="px-5 md:px-16">
           <header className="mb-24">
             <div className="flex h-24 items-center justify-between">
               <Link href="/">

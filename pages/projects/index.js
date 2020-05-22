@@ -15,7 +15,7 @@ export default () => {
           columnClassName="px-5"
           breakpointCols={{
             default: 3,
-            1000: 2,
+            1150: 2,
             700: 1,
             400: 1,
           }}
