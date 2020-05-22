@@ -163,8 +163,8 @@ function Layout({ title = "Ragnor Comerford", children }) {
             >
               resume
             </a>
-            <ActiveLink activeClassName="text-primary" href="/api">
-              <a>API</a>
+            <ActiveLink activeClassName="text-primary" href="/graphql">
+              <a>api</a>
             </ActiveLink>
           </div>
         </div>
