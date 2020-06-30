@@ -26,7 +26,7 @@ export async function getStaticPaths() {
       { params: { collection: "books" } },
       { params: { collection: "movieSeries" } },
       { params: { collection: "toolServices" } },
-      { params: { collection: "people" } },
+     
     ],
     fallback: false,
   };
@@ -41,10 +41,7 @@ export async function getStaticProps({ params }) {
     },
     toolServices: {
       heading: "Tools and Services",
-    },
-    people: {
-      heading: "People",
-    },
+    }
   };
   return {
     props: {

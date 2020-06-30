@@ -47,11 +47,6 @@ export default () => {
               title="Tools and Services"
               href="/collections/toolServices"
             ></ListItem>
-            <ListItem
-              icon={<User></User>}
-              title="People"
-              href="/collections/people"
-            ></ListItem>
           </Masonry>
         </div>
       </div>
