@@ -15,7 +15,7 @@ export default () => {
               <strong>Period:</strong> June - August 2019
             </p>
             <p>
-              <strong>Collaborators:</strong>&nbsp;
+              <strong>Supervisors:</strong>&nbsp;
               <a
                 target="_blank"
                 className="underline"
@@ -23,7 +23,7 @@ export default () => {
               >
                 Victor Kristof
               </a>
-              ,
+              ,{" "}
               <a
                 target="_blank"
                 className="underline"
@@ -31,7 +31,7 @@ export default () => {
               >
                 Patrick Thiran
               </a>
-              ,
+              ,{" "}
               <a
                 target="_blank"
                 className="underline"
@@ -54,8 +54,8 @@ export default () => {
               </a>
             </p>
 
-            <a href="https://epfl.ch">
-              <Image className="w-1/6 h-auto mt-5" path="predikon/epfl.svg" />
+            <a href="https://epfl.ch" className="mt-5">
+              <Image width={64} height={64} src="/img/logos/epfl.svg" />
             </a>
           </div>
         </div>
@@ -83,10 +83,14 @@ export default () => {
           proposal.
         </p>
         <div className="flex flex-col items-center w-100 mb-10">
-          <Image
-            className="mt-5 mb-5 w-1/2"
-            path="predikon/predikon-results.png"
-          ></Image>
+          <div className="mt-5 mb-5 w-1/2 relative">
+            <Image
+              width={500}
+              height={300}
+              objectFit="contain"
+              src="/img/projects/predikon/predikon-results.png"
+            ></Image>
+          </div>
           <p>
             Figure 1: Vote results of the Swiss Referendum on membership in the
             European Economic Area (EEA)
@@ -130,11 +134,21 @@ export default () => {
         </p>
         <div className="flex flex-row flex-wrap justify-center w-100 mt-10 mb-20">
           <div className="flex flex-col items-center justify-center">
-            <Image path="predikon/pca.svg" />
+            <Image
+              src="/img/projects/predikon/pca.svg"
+              width={500}
+              height={300}
+              objectFit="contain"
+            />
             <p className="mt-2 mb-10">Figure 2: Scatter plot of PCA</p>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <Image path="predikon/pcaMap.svg" />
+            <Image
+              src="/img/projects/predikon/pcaMap.svg"
+              width={500}
+              height={300}
+              objectFit="contain"
+            />
             <p className="mt-2 mb-10">
               Figure 3: Voting patterns in Swiss municipalities
             </p>
@@ -153,7 +167,13 @@ export default () => {
           in each municipality.
         </p>
         <div className="flex flex-col items-center w-100 my-10">
-          <Image className="mt-5 mb-2 w-2/5" path="predikon/tsne.svg"></Image>
+          <Image
+            className="mt-5 mb-2 w-2/5"
+            width={500}
+            height={300}
+            objectFit="contain"
+            src="/img/projects/predikon/tsne.svg"
+          ></Image>
           <p>Figure 4: Scatter plot of t-SNE</p>
         </div>
         <h2 className="text-xl font-bold mb-2">Reference papers</h2>
