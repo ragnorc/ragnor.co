@@ -1,11 +1,11 @@
-import Image from "components/image";
+import Image from "next/image";
 import Layout from "components/layout";
 
 export default () => {
   return (
     <Layout>
       <div className="flex flex-col px-18 lg:px-24 w-full leading-relaxed">
-        <div className="flex mb-20">
+        <div className="flex mb-10">
           <div>
             <h1 className="text-5xl font-bold mb-8">Coursework</h1>
             <p>
@@ -19,15 +19,16 @@ export default () => {
               <strong>Location:</strong> University of Edinburgh, UK
             </p>
 
-            <a href="https://ed.ac.uk">
+            <a className="mt-10" href="https://ed.ac.uk">
               <Image
-                className="w-1/10 h-auto mt-5"
-                path="logos/edinburgh.png"
+                width="50px"
+                height="50px"
+                src="/img/logos/edinburgh.png"
               />
             </a>
           </div>
         </div>
-        <p className="mb-10">
+        <p className="mb-5">
           Throughtout my degree programme at the University of Edinburgh I was
           able to work on different projects, making use of learned theoretical
           concepts. Some of them can be found in the following Github

@@ -1,28 +1,33 @@
 import Layout from "components/layout";
 import Link from "next/link";
-import Image from "components/image";
+import Image from "next/image";
 import { Masonry } from "masonic";
 
 export default () => {
   const photos = [
-    "hyped/hyped-group-photo.jpeg",
-    "hyped/software-team.jpg",
-    "hyped/hyped-elon-musk.jpg",
-    "hyped/isabella-ragnor-working.jpg",
-    "hyped/spacex-tube-interior.jpg",
-    "hyped/spacex-falcon.jpg",
-    "hyped/spacex-tube.jpg",
+    "hyped-group-photo.jpeg",
+    "software-team.jpg",
+    "hyped-elon-musk.jpg",
+    "isabella-ragnor-working.jpg",
+    "spacex-tube-interior.jpg",
+    "spacex-falcon.jpg",
+    "spacex-tube.jpg",
   ];
 
   return (
     <Layout>
       <div className="flex flex-col px-18 lg:px-24 w-full leading-relaxed">
-        <div className="flex mb-20">
-          <Image
+        <div className="flex mb-10">
+          <div
             style={{ boxShadow: "0px 0px 45px 10px rgba(45, 56, 104, 0.5" }}
-            path="hyped/thumbnail.jpeg"
-            className="rounded-lg w-1/4 mr-20 mb-4 hidden md:block xl:block xxl:block"
-          ></Image>
+            className="rounded-lg w-56 h-84 mr-20 mb-4 relative"
+          >
+            <Image
+              src="/img/projects/hyped/thumbnail.jpeg"
+              layout="fill"
+              className="rounded-lg"
+            ></Image>
+          </div>
 
           <div>
             <h1 className="text-5xl font-bold mb-8">Hyped</h1>
@@ -46,9 +51,14 @@ export default () => {
               </a>
             </p>
 
-            <div className="flex mt-10 items-center">
-              <Image className="w-1/12 h-auto mr-5" path="logos/hyped.png" />
-              <Image className="w-2/5 h-auto" path="logos/spacex.svg" />
+            <div className="flex items-center">
+              <Image
+                width="40px"
+                height="40px"
+                className="mr-8"
+                src="/img/logos/hyped.png"
+              />
+              <Image width="170px" height="170px" src="/img/logos/spacex.svg" />
             </div>
           </div>
         </div>
@@ -97,7 +107,14 @@ export default () => {
             return { url };
           })}
           render={({ index, data, width }) => (
-            <Image path={data.url} className="rounded-lg"></Image>
+            <div className="relative h-64" style={{ width }}>
+              <Image
+                src={"/img/projects/hyped/" + data.url}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              ></Image>
+            </div>
           )}
         ></Masonry>
       </div>

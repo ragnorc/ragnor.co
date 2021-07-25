@@ -1,6 +1,6 @@
 import Masonry from "react-masonry-css";
 import Layout from "components/layout";
-import Image from "components/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default () => {
@@ -22,9 +22,10 @@ export default () => {
         >
           <Link href="/projects/predikon">
             <a>
-              <div className="shadow-black rounded-xl mb-6">
+              <div className="shadow-black rounded-xl mb-6 bg-white">
                 <div className="flex w-full justify-center items-center h-48 xxl:h-64">
-                  <Image className="w-1/5 h-auto" path="logos/epfl.svg" />
+                  <Image width="50px" height="50px" src="/img/logos/epfl.svg" />
+
                   <div className="border-l-2 h-10 border-black mx-5"></div>
                   <h2 className="text-lg">Predikon</h2>
                 </div>
@@ -33,9 +34,13 @@ export default () => {
           </Link>
           <Link href="/projects/hyped">
             <a>
-              <div className="shadow-black rounded-xl mb-6">
+              <div className="shadow-black rounded-xl mb-6 bg-white">
                 <div className="flex w-full justify-center items-center h-48 xxl:h-64">
-                  <Image className="w-1/10 h-auto" path="logos/hyped.png" />
+                  <Image
+                    width="50px"
+                    height="50px"
+                    src="/img/logos/hyped.png"
+                  />
 
                   <div className="border-l-2 h-10 border-black mx-5"></div>
                   <h2 className="text-lg">Hyperloop</h2>
@@ -45,9 +50,13 @@ export default () => {
           </Link>
           <Link href="/projects/coursework">
             <a>
-              <div className="shadow-black rounded-xl mb-6">
+              <div className="shadow-black rounded-xl mb-6 bg-white">
                 <div className="flex w-full justify-center items-center h-48 xxl:h-64">
-                  <Image className="w-1/6 h-auto" path="logos/edinburgh.png" />
+                  <Image
+                    width="50px"
+                    height="50px"
+                    src="/img/logos/edinburgh.png"
+                  />
 
                   <div className="border-l-2 h-10 border-black mx-5"></div>
                   <h2 className="text-lg">Coursework</h2>

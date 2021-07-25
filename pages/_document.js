@@ -6,10 +6,6 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import * as snippet from "@segment/snippet";
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
-  }
   renderSnippet() {
     const opts = {
       apiKey: process.env.SEGMENT_KEY,
@@ -29,13 +25,13 @@ class MyDocument extends Document {
     return (
       <Html className="h-full">
         <Head>
-          <link
-            rel="shortcut icon"
-            href="https://ik.imagekit.io/ragnor/logos/rc.png"
-          />
+          <link rel="shortcut icon" href="/logos/rc.png" />
           <script dangerouslySetInnerHTML={{ __html: this.renderSnippet() }} />
         </Head>
-        <body className="font-sans h-full w-full">
+        <body
+          className="font-sans text-md h-full w-full"
+          style={{ backgroundColor: "#f7f2f2" }}
+        >
           <Main />
           <NextScript />
         </body>

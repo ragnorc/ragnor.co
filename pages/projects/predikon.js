@@ -1,4 +1,4 @@
-import Image from "components/image";
+import Image from "next/image";
 import Layout from "components/layout";
 
 export default () => {

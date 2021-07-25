@@ -45,7 +45,7 @@ export default () => {
             <ListItem
               icon={<Zap></Zap>}
               title="Tools and Services"
-              href="/collections/toolServices"
+              href="/collections/services"
             ></ListItem>
           </Masonry>
         </div>

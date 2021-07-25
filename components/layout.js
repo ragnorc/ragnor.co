@@ -3,8 +3,8 @@ import { Menu, X } from "react-feather";
 import Link from "next/link";
 import ActiveLink from "./activeLink";
 import Router from "next/router";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import Image from "components/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import SiriWave from "siriwave";
@@ -43,7 +43,7 @@ function Layout({ title = "Ragnor Comerford", children }) {
     });
   }, []);
   return (
-    <div className="flex flex-row h-full w-full h-screen">
+    <div className="flex flex-row h-full w-full">
       <div
         className={`${
           isOpen ? "hidden" : "block"
@@ -65,23 +65,24 @@ function Layout({ title = "Ragnor Comerford", children }) {
           <header className="mb-24">
             <div className="flex h-24 items-center justify-between">
               <Link href="/">
-                <Image className="h-12" path="logos/rc.png" />
+                <Image width="50rem" height="50rem" src="/img/logos/rc.png" />
               </Link>
 
               <div className="text-black  flex items-center justify-between hidden lg:block xl:block">
                 <ActiveLink activeClassName="text-primary" href="/" exact>
                   <a className={`ml-5 hover:text-primary`}>home</a>
                 </ActiveLink>
-                <ActiveLink activeClassName="text-primary" href="/about">
-                  <a className={`ml-5 hover:text-primary`}>about</a>
-                </ActiveLink>
+
                 <ActiveLink activeClassName="text-primary" href="/projects">
                   <a className={`ml-5 hover:text-primary`}>projects</a>
                 </ActiveLink>
                 <ActiveLink activeClassName="text-primary" href="/collections">
                   <a className={`ml-5 hover:text-primary`}>collections</a>
                 </ActiveLink>
-                <a
+                <ActiveLink activeClassName="text-primary" href="/thoughts">
+                  <a className={`ml-5 hover:text-primary`}>thoughts</a>
+                </ActiveLink>
+                {/* <a
                   target="_blank"
                   className={`ml-5 hover:text-primary`}
                   href="https://storage.ragnor.co/ResumeRagnorComerford.pdf"
@@ -90,7 +91,7 @@ function Layout({ title = "Ragnor Comerford", children }) {
                 </a>
                 <ActiveLink activeClassName="text-primary" href="/graphql">
                   <a className={`ml-5 hover:text-primary`}>api</a>
-                </ActiveLink>
+                </ActiveLink> */}
               </div>
             </div>
           </header>
@@ -131,7 +132,7 @@ function Layout({ title = "Ragnor Comerford", children }) {
               </a>
             </div>
             <p className="mt-12 text-gray-700">
-              Ragnor Comerford © 2020 All rights reserved.
+              Ragnor Comerford © 2021 All rights reserved.
             </p>
           </div>
         </div>
@@ -147,25 +148,23 @@ function Layout({ title = "Ragnor Comerford", children }) {
             <ActiveLink activeClassName="text-primary" href="/" exact>
               <a>home</a>
             </ActiveLink>
-            <ActiveLink activeClassName="text-primary" href="/about">
-              <a>about</a>
-            </ActiveLink>
+
             <ActiveLink activeClassName="text-primary" href="/projects">
               <a>projects</a>
             </ActiveLink>
             <ActiveLink activeClassName="text-primary" href="/collections">
               <a>collections</a>
             </ActiveLink>
-            <a
+            <ActiveLink activeClassName="text-primary" href="/thoughts">
+              <a>thoughts</a>
+            </ActiveLink>
+            {/* <a
               target="_blank"
               className={`ml-5 hover:text-primary`}
               href="https://storage.ragnor.co/ResumeRagnorComerford.pdf"
             >
               resume
-            </a>
-            <ActiveLink activeClassName="text-primary" href="/graphql">
-              <a>api</a>
-            </ActiveLink>
+            </a> */}
           </div>
         </div>
       </div>
