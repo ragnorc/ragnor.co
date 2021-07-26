@@ -1,5 +1,5 @@
 import Masonry from "react-masonry-css";
-import Layout from "components/layout";
+import Layout from "components/Layout";
 import Link from "next/link";
 import { Book, Video, Zap, User } from "react-feather";
 

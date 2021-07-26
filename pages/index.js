@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Layout from "components/layout";
+import Layout from "components/Layout";
 
 import Link from "next/link";
 import Typical from "react-typical";
