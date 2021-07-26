@@ -11,15 +11,15 @@ export default ({ initialQueriesData }) => {
         <div className="w-3/6">
           <Typical
             steps={[
-              "Salut!",
+              "Welcome!",
               2000,
-              "Ciao!",
+              "Bienvenu!",
               2000,
-              "Hola!",
+              "أهْلاً وسَهْلاً",
               2000,
-              "Hello!",
+              "Benvenuto!",
               2000,
-              "!أهلاً",
+              "Добро пожаловать!",
               2000,
             ]}
             loop={Infinity}
