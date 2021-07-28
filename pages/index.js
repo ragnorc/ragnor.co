@@ -8,7 +8,7 @@ export default ({ initialQueriesData }) => {
   return (
     <Layout>
       <div className="flex items-center justify-center leading-relaxed">
-        <div className="w-3/6">
+        <div className="w-full px-5 md:w-5/6 lg:w-3/6">
           <Typical
             steps={[
               "Welcome!",

@@ -68,7 +68,7 @@ function Layout({ title = "Ragnor Comerford", children }) {
                 <Image width="50rem" height="50rem" src="/img/logos/rc.png" />
               </Link>
 
-              <div className="text-black flex items-center justify-between lg:block xl:block">
+              <div className="text-black hidden items-center justify-between lg:flex">
                 <ActiveLink activeClassName="text-primary" href="/" exact>
                   <a className={`ml-5 hover:text-primary`}>home</a>
                 </ActiveLink>
