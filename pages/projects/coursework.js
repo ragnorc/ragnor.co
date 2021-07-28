@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Layout from "components/Layout";
 
-export default () => {
+const Coursework = () => {
   return (
     <Layout>
       <div className="flex flex-col px-18 lg:px-24 w-full leading-relaxed">
@@ -78,3 +78,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Coursework;

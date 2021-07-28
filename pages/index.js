@@ -4,7 +4,7 @@ import Layout from "components/Layout";
 import Link from "next/link";
 import Typical from "react-typical";
 
-export default ({ initialQueriesData }) => {
+const Index = ({ initialQueriesData }) => {
   return (
     <Layout>
       <div className="flex items-center justify-center leading-relaxed">
@@ -116,3 +116,5 @@ export default ({ initialQueriesData }) => {
     </Layout>
   );
 };
+
+export default Index;

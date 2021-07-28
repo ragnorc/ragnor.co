@@ -14,7 +14,7 @@ const ListItem = ({ href, title, icon }) => {
   );
 };
 
-export default () => {
+const Index = () => {
   return (
     <Layout>
       <div className="flex">
@@ -53,3 +53,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Index;

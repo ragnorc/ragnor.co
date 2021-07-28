@@ -1,6 +1,6 @@
 import Layout from "components/Layout";
 
-export default () => {
+const Graphql = () => {
   return (
     <Layout>
       <div className="pl-18 lg:pl-32 md:w-3/4 lg:w-3/4 leading-relaxed">
@@ -42,3 +42,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Graphql;

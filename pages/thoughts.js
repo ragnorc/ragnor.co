@@ -1,6 +1,6 @@
 import Layout from "components/Layout";
 
-export default () => {
+const Thoughts = () => {
   return (
     <Layout>
       <div class="pl-18 lg:pl-32 md:w-3/4 lg:w-3/4 leading-relaxed">
@@ -12,3 +12,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Thoughts;

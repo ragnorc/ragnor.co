@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Masonry } from "masonic";
 
-export default () => {
+const Hyped = () => {
   const photos = [
     "hyped-group-photo.jpeg",
     "software-team.jpg",
@@ -121,3 +121,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Hyped;

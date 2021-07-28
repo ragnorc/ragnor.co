@@ -3,7 +3,7 @@ import Layout from "components/Layout";
 import Image from "next/image";
 import Link from "next/link";
 
-export default () => {
+const Index = () => {
   return (
     <Layout>
       <div className="pl-18 lg:pl-32 w-full leading-relaxed">
@@ -69,3 +69,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Index;

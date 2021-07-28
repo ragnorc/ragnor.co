@@ -1,7 +1,7 @@
 import Layout from "./Layout";
 
-export default () => (
-  <Layout>
-    <div>Loading...</div>
-  </Layout>
-);
+const Loading = () => <Layout>
+  <div>Loading...</div>
+</Layout>;
+
+export default Loading;
