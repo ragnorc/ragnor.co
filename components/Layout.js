@@ -124,12 +124,12 @@ function Layout({ title = "Ragnor Comerford", children }) {
                   icon={["fab", "linkedin-in"]}
                 />
               </a>
-              <a href="https://ragnor.co/instagram" target="_blank">
+              {/* <a href="https://ragnor.co/instagram" target="_blank">
                 <FontAwesomeIcon
                   className="text-2xl md:text-2.5xl mx-6"
                   icon={["fab", "instagram"]}
                 />
-              </a>
+              </a> */}
             </div>
             <p className="mt-12 text-gray-700">
               Ragnor Comerford © 2021 All rights reserved.

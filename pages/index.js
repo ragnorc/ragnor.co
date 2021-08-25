@@ -8,7 +8,7 @@ const Index = ({ initialQueriesData }) => {
   return (
     <Layout>
       <div className="flex items-center justify-center leading-relaxed">
-        <div className="w-full px-5 md:w-5/6 lg:w-3/6">
+        <div className="w-full px-5 md:w-2/3 lg:w-3/6">
           <Typical
             steps={[
               "Welcome!",
@@ -25,19 +25,26 @@ const Index = ({ initialQueriesData }) => {
             loop={Infinity}
             wrapper="h1"
           />
-          <p className="mt-6 text-justify hyphens">
+          <ul className="mt-6 text-justify hyphens">
             I’m Ragnor. I'm a founder, independent researcher and aspiring
             polymath.
             <br />
             <br />
-            I recently graduated from the University of Edinburgh in Artifical
-            Intelligence and Computer Science.
-            <br />
-            My research interests are in the area of machine learning, Bayesian
-            inference, and systems and synthetic biology. I am particularly
-            exhilarated by the idea of engineering biology to solve important
-            problems in health, food and environment.
-            <br />
+            <li>
+              I studied Artifical Intelligence and Computer Science at the
+              University of Edinburgh and wrote my thesis on computational drug
+              discovery.
+            </li>
+            <li>
+              I am interested in how Information Theory connects the seemingly
+              unrelated fields of Machine Learning, Bayesian Inference,
+              Thermodynamics, Systems Biology and Reinforcement Learning.{" "}
+            </li>
+            <li>
+              I am passionate about Synthetic Biology and how we can program
+              Biology to better understand complex biological systems and solve
+              important problems in medicine and the environment.
+            </li>
             <br />
             📚 I'm currently reading{" "}
             <a
@@ -109,7 +116,7 @@ const Index = ({ initialQueriesData }) => {
               drop me an email
             </a>
             .
-          </p>
+          </ul>
           <img src="/img/signature.png" className="h-24 mt-8" />
         </div>
       </div>

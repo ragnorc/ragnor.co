@@ -6,7 +6,7 @@ import { Book, Video, Zap, User } from "react-feather";
 const ListItem = ({ href, title, icon }) => {
   return (
     <Link as={href} href="/collections/[collection]">
-      <a className="shadow-black rounded-lg mb-6 flex items-center justify-start h-20 pl-10">
+      <a className="shadow-black bg-white  border rounded-lg mb-6 flex items-center justify-start h-20 pl-10">
         {icon}
         <p className="ml-5">{title}</p>
       </a>
