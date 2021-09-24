@@ -1,6 +1,7 @@
 import React from "react";
 import App from "next/app";
 import "css/main.css";
+import PlausibleProvider from "next-plausible";
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -17,7 +18,12 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />;
+
+    return (
+      <PlausibleProvider domain="ragnor.co">
+        <Component {...pageProps} />
+      </PlausibleProvider>
+    );
   }
 }
 
