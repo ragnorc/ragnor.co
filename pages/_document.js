@@ -27,6 +27,17 @@ class MyDocument extends Document {
         <Head>
           <link rel="shortcut icon" href="/logos/rc.png" />
           <script dangerouslySetInnerHTML={{ __html: this.renderSnippet() }} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function (d, u, h, s) {
+                  h = d.getElementsByTagName('head')[0];
+                  s = d.createElement('script');
+                  s.async = 1;
+                  s.src = u + new Date().getTime();
+                  h.appendChild(s);
+                })(document, 'https://grow.clearbitjs.com/api/pixel.js?v=');`,
+            }}
+          />
         </Head>
         <body
           className="font-sans text-md h-full w-full"

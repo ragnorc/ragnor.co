@@ -20,7 +20,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <PlausibleProvider domain="ragnor.co">
+      <PlausibleProvider domain="ragnor.co" trackOutboundLinks>
         <Component {...pageProps} />
       </PlausibleProvider>
     );
