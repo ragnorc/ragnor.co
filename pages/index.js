@@ -63,13 +63,6 @@ const Index = ({ initialQueriesData }) => {
             .
             <br />
             <br />
-            🛠 I'm building{" "}
-            <a className="underline text-black" href="https://edventure.vc">
-              Edventure
-            </a>
-            , an operating system for turning students and researchers into
-            entrepreneurs solving global challenges.
-            <br />
             <br />
             Aside from work I am passionate about learning languages (currently
             Arabic), playing sports with friends and adventure travel.
@@ -79,29 +72,6 @@ const Index = ({ initialQueriesData }) => {
             </Link>
             &nbsp;of books, movies, and articles I particularly like and
             recommend. */}
-            <br />
-            <br />
-            🎧 These days I'm listening to{" "}
-            <a
-              className="underline text-black"
-              href="https://open.spotify.com/artist/1i8SpTcr7yvPOmcqrbnVXY?si=k9XRh72ES1ynFOkrOTMEYw&dl_branch=1"
-            >
-              Ozuna
-            </a>
-            ,{" "}
-            <a
-              className="underline text-black"
-              href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c?si=edw2rNlHSFKUXDa6TfJRCg&dl_branch=1"
-            >
-              Sufjan Stevens
-            </a>
-            , and{" "}
-            <a
-              className="underline text-black"
-              href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c?si=edw2rNlHSFKUXDa6TfJRCg&dl_branch=1"
-            >
-              Bach
-            </a>
             .
             <br />
             <br />
