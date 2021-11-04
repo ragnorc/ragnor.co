@@ -26,7 +26,7 @@ const Index = ({ initialQueriesData }) => {
             wrapper="h1"
           />
           <ul className="mt-6 text-justify hyphens">
-            I’m Ragnor. I'm a founder, independent researcher and aspiring
+            I’m Ragnor. I'm a builder, independent researcher and aspiring
             polymath.
             <br />
             <br />
