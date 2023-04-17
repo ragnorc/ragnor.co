@@ -25,7 +25,7 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "@segment/snippet": "^4.12.0",
     "axios": "^0.19.2",
-    "chrono-node": "^1.4.2",
+    "chrono-node": "^2.2.4",
     "dotenv": "^8.2.0",
     "graphql": "14.5.8",
     "graphql-request": "^1.8.2",
